@@ -1,0 +1,25 @@
+<html>
+    <head></head>
+        <script language="Javascript">
+            //membuat fungsi test
+        function test() {
+             //mendeklarasikan variabel val1
+        var val1=document. kirim. T1. value
+            //jika nilai variabel memiliki sisa hasil bagi dengan bilangan 2 sebesar 0 maka termasuk bilangan genap 
+        if (val1%2==0)
+        document.kirim.T2. value="bilangan genap"
+            // jika tidak memiliki sisa hasil bagi dengan bilangan 2 sebesar 0  maka bilangan ganjil
+        else
+        document.kirim.T2. value="bilangan ganjil"
+        }   
+        </script>
+<body>
+    <!-- method pada form untuk mengirim nilai variabel  -->
+    <form method="POST" name="kirim">
+    <!-- input untuk memasukkan bilangan -->
+    <p> BIL <input type="text" name="T1" size="20"> MERUPAKAN BIL <input type="text" name="T2" size="20"> </p>
+    <!-- tombol untuk menebak bilangan genap atau ganjil -->
+    <p><input type ="button" value="TEBAK" name="B1" onclick=test()> </p>
+</body>
+</form>
+</html>

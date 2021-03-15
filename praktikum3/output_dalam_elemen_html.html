@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--  memberi informasi terhadap browser untuk 
+    melakukan pengkodean karakter sesuai ketentuan UTF-8 -->
+    <meta charset="utf-8">
+    <!-- judul utama keseluruhan html -->
+    <title>Menulis Kode di elemen HTML dengan JavaScript </title>
+</head>
+<body>
+    <!-- paragraf pertama menampilkan hasil id greet -->
+    <p id="greet"></p>
+    <!-- paragraf pertama menampilkan hasil id result -->
+    <p id="result"></p>
+
+    <script>
+        //menulis string berupa teks dalam elemen HTML
+        document.getElementById("greet").innerHTML = "Halo Elsa"; // hasil: Halo Elsa
+
+        //print atau mencetak teks sederhana
+        var x = 50;
+        var y = 30;
+        var sum = x + y;
+        document.getElementById("result").innerHTML = sum; //hasil  : 80
+    </script>
+</body>
+</html>

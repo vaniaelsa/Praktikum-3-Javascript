@@ -1,0 +1,31 @@
+<html>
+<head>
+<title> Contoh Program Javascript </title>
+</head>
+<script language="Javascript">
+function test () {
+//menampilkan jendela dialog atau pop up untuk mengisi nilai val1 dan val 2
+val1=window.prompt("Nilai I :")
+val2=window.prompt("Nilai II :")
+
+//memakai operator perbandingan sama dengan (==)
+document.write("<br>"+"val1==val2"+"<br>")
+document.write(val1==val2) 
+
+//memakai operator perbandingan tidak sama dengan (!=)
+document.write("<br>"+"val1!=val2"+"<br>")
+document.write(val1!=val2) 
+
+//memakai operator perbandingan lebih besar dari (>)
+document.write("<br>"+"val1&gtval2"+"<br>")
+document.write(val1>val2) 
+
+//memakai operator perbandingan kurang dari (<)
+document.write("<br>"+"val1&ltval2"+"<br>")
+document.write(val1<val2) }
+</script>
+<body>
+<!-- tombol operasi relasional -->
+<input type="button" name="button1" value="relational" onclick=test()>
+</body>
+</html>

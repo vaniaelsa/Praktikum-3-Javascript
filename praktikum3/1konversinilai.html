@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Konversi Nilai Angka Menjadi Huruf </title>
+        <!--  memberi informasi terhadap browser untuk 
+            melakukan pengkodean karakter sesuai ketentuan UTF-8 -->
+        <meta charset="utf-8">
+    </head>
+    <style type="text/css">
+        /* warna background halaman html adalah plum */
+        body {background-color: plum; }
+        /* heading 1 memiliki font arial dan berada di tengah */
+        h1 {font-family: arial; text-align: center; }
+        /* bagian elemen paragraf di html berada di tengah  */
+        p { text-align: center;}
+    </style>
+
+<script language="Javascript">
+    //<!
+    // membuat fungsi konversi
+    function konversi() {
+    //mendeklarasikan variabel nilai 
+    var nilai  = document.kirim.N1.value
+        //kondisi bila nilai lebih dari sama dengan 81 dan kurang dari sama dengan 100
+    if (nilai >=81 && nilai<=100)
+        document.kirim.N2.value = "A" //output : A
+
+        //kondisi bila nilai lebih dari sama dengan 0 dan kurang dari sama dengan 40
+    else if (nilai>=0 && nilai<=40)
+        document.kirim.N2.value = "E" //output : E
+
+        //kondisi bila nilai lebih dari sama dengan 41 dan kurang dari sama dengan 55
+    else if (nilai>=41 && nilai<=55)
+        document.kirim.N2.value = "D" // output : D
+    
+        //kondisi bila nilai lebih dari sama dengan 56 dan kurang dari sama dengan 60
+    else if (nilai>=56 && nilai<=60)
+        document.kirim.N2.value = "C" // outpt : C
+
+        //kondisi bila nilai lebih dari sama dengan 61 dan kurang dari sama dengan 65
+    else if (nilai>=61 && nilai<=65)
+        document.kirim.N2.value = "BC" //output : BC
+
+        //kondisi bila nilai lebih dari sama dengan 66 dan kurang dari sama dengan 70
+    else if (nilai>=66 && nilai<=70)
+        document.kirim.N2.value = "B" //output : B
+
+        //kondisi bila nilai lebih dari sama dengan 71 dan kurang dari sama dengan 80
+    else if (nilai>=71 && nilai<=80)
+        document.kirim.N2.value = "AB"//output : AB
+
+    //bila nilai melebihi 100 akan muncul pesan peringatan
+    else alert("Masukkan Nilai yang BENAR")
+    }
+    //-!>
+    
+</script>
+
+    <body>
+        <!-- heading 1 -->
+        <h1> KONVERSI NILAI ANGKA MENJADI NILAI HURUF </h1>
+        <!-- method pada form untuk mengirim nilai variabel  -->
+        <form method="POST" name="kirim">
+            <!-- input untuk memasukkan nilai -->
+            <p> NILAI ANGKA : <input type="text" name="N1" >  </p>
+            <!-- input untuk menampilkan hasil konversi -->
+            <p> NILAI HURUF :  <input type="text" name="N2"> </p>
+            <!-- tombol untuk mengkonversi -->
+            <p><input type ="button" value="KONVERSIKAN" name="B1" onclick=konversi()> </p>
+            <!-- tombol untuk mengembalikan form pada kondisi awal -->
+            <p><input type ="reset" value="KOSONGKAN FORM" name="R1" ></p>
+        </form>
+    </body>    
+</html>

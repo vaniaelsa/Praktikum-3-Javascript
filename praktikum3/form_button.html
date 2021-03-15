@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <!-- judul keseluruhan halaman HTML -->
+        <title> Objek Dokumen </title>
+    </head>
+<body>
+    <script language="Javascript">
+        //<!-
+            //fungsi untuk mengubah warna latar belakang
+        function ubahWarnaLB(warna) {
+        document.bgColor = warna;
+        }
+            //fungsi untuk mengubah warna font
+        function ubahWarnaLD(warna) {
+        document.fgColor = warna;
+        //->
+        }
+    </script>
+
+    <!-- html heading 1 -->
+    <h1>TES</h1>
+    <form>
+        <!-- tombol untuk mengubah latar belakang menjadi hijau -->
+        <INPUT TYPE = "BUTTON"
+        VALUE = "Latar Belakang Hijau"
+        onClick = "ubahWarnaLB('GREEN')">
+
+        <!-- tombol untuk mengubah latar belakang menjadi putih -->
+        <INPUT TYPE = "BUTTON"
+        VALUE = "Latar Belakang Putih"
+        onClick = "ubahWarnaLB('WHITE')">
+
+        <!-- tombol untuk mengubah teks menjadi kuning -->
+        <INPUT TYPE = "BUTTON"
+        VALUE = "Teks Kuning"
+        onClick = "ubahWarnaLD('YELLOW')">
+
+        <!-- tombol untuk mengubah teks menjadi biru -->
+        <INPUT TYPE = "BUTTON"
+        VALUE = "Teks Biru"
+        onClick = "ubahWarnaLD('BLUE')">
+    </form>
+</body>
+</html>

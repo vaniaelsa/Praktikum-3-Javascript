@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalkulator Elsa</title>
+    <!--  memberi informasi terhadap browser untuk 
+    melakukan pengkodean karakter sesuai ketentuan UTF-8 -->
+    <meta charset="utf-8">
+</head>
+    <style type="text/css">
+        /* warna background halaman html adalah plum */
+        body {background-color: lightblue; }
+        /* heading 1 memiliki font arial dan berada di tengah */
+        h1 {font-family: arial; text-align: center; }
+        /* bagian elemen paragraf di html berada di tengah  */
+        p { text-align: center;}
+    </style>
+
+
+<body>
+    <h1> Kalkulator Sederhana </h1>
+    <!-- input untuk memasukkan angka 1 -->
+    <p>Angka Pertama : <input type="text" id="angka1"> </p>
+    <!-- input untuk memasukkan angka 2 -->
+    <p>Angka Kedua : <input type="text" id="angka2"> </p>
+    <!-- untuk menampilkan hasil  -->
+    <p>Hasil : <input type="text" id="hasil" readonly="true"> </p> 
+    
+    <p> 
+        <!-- tombol untuk operasi tambah kurang kali bagi -->
+        <input type="button" value=" + " onclick="tambah()">
+        <input type="button" value=" - " onclick="kurang()">
+        <input type="button" value=" x " onclick="kali()">
+        <input type="button" value=" / " onclick="bagi()">
+        <!-- tombol membersihkan inputan -->
+        <input type ="reset" value="BERSIHKAN INPUTAN" id="reset" onclick="reset()" >
+    </p>
+    
+</body>
+<script>
+    //<!-
+        //untuk melihat tanggal dan waktu halaman html dimodifikasi terakhir 
+    document.write("Dimodifikasi Terakhir Pada : " +document.lastModified);
+
+    //deklarasi variabel
+    var angka1 = document.getElementById("angka1");
+    var angka2 = document.getElementById("angka2");
+    var hasil = document.getElementById("hasil");
+    
+    //fungsi menambahan nilai input angka 1 dan angka2
+    function tambah(){
+        hasil.value = Number(angka1.value)+Number(angka2.value);
+    }
+
+    //fungsi mengurangkan nilai input angka 1 dan angka2
+    function kurang(){
+        hasil.value = Number(angka1.value)-Number(angka2.value);
+    }
+
+    //fungsi mengalikan nilai input angka 1 dan angka2
+    function kali(){
+        hasil.value = Number(angka1.value)*Number(angka2.value);
+    }
+
+    //fungsi pembagian nilai input angka 1 dan angka2
+    function bagi(){
+        hasil.value = Number(angka1.value)/Number(angka2.value);
+    }
+
+    //fungsi untuk membersihkan inputan
+    function reset(){
+        document.getElementById("angka1").value = "";
+        document.getElementById("angka2").value = "";
+        document.getElementById("hasil").value = "";
+    }
+    //-!>
+</script>
+</html>
